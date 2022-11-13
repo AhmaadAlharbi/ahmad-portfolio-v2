@@ -1022,6 +1022,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: block;
   }
 
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:hidden {
     display: none;
   }
