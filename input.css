@@ -5,6 +5,7 @@
 #icons svg:hover path {
     transition:fill ;
     transition-delay:0.5s;
+    scale: 1.1;
     fill:#4EE1A0;
     -webkit-transition:fill ;
     -moz-transition:fill ;
