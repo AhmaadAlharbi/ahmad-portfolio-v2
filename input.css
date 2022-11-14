@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#icons svg:hover path {
+    transition:fill ;
+    transition-delay:0.5s;
+    fill:#4EE1A0;
+    -webkit-transition:fill ;
+    -moz-transition:fill ;
+    -ms-transition:fill ;
+    -o-transition:fill ;
+}
