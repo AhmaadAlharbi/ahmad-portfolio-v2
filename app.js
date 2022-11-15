@@ -32,3 +32,28 @@ function checkInput(text) {
     counterError++;
   }
 }
+
+sendBtn.addEventListener("click", (e) => {
+  // e.preventDefault();
+  // checkInput(inputName);
+  // checkInput(email);
+  // if (validateEmail(email.value) == false) {
+  //   email.classList.add("error-border");
+  //   counterError++;
+  //   if (email.value != "") {
+  //     warningText.classList.remove("hidden");
+  //     warningIcon.classList.remove("hidden");
+  //   }
+  // } else {
+  //   email.classList.add("border-Green");
+  //   counterError = 0;
+  //   warningText.classList.add("hidden");
+  //   warningIcon.classList.add("hidden");
+  // }
+  // checkInput(message);
+  // if (counterError == 0) {
+  //   alert("your email has been sent");
+  //   form.submit();
+  // }
+  alert("your email has been sent");
+});
