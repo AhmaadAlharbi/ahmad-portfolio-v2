@@ -523,6 +523,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 3.5rem;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
+.bottom-16 {
+  bottom: 4rem;
+}
+
+.bottom-20 {
+  bottom: 5rem;
+}
+
+.bottom-14 {
+  bottom: 3.5rem;
+}
+
+.bottom-\[60px\] {
+  bottom: 60px;
+}
+
 .-z-30 {
   z-index: -30;
 }

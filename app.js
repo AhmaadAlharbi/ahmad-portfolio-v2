@@ -15,8 +15,6 @@ function validateEmail(email) {
 //check if forms inputs empty or not
 
 function required(inputtx) {
-  inputtx.classList.remove("error-border");
-  inputtx.classList.remove("correct-border");
   if (inputtx.value.length == 0) {
     inputtx.classList.add("error-border");
     warning.classList.remove("hidden");
@@ -24,6 +22,7 @@ function required(inputtx) {
   }
   warning.classList.add("hidden");
   inputtx.classList.add("correct-border");
+  inputtx.classList.remove("error-border");
   return true;
 }
 
@@ -31,16 +30,22 @@ function required(inputtx) {
 sendBtn.addEventListener("click", (e) => {
   e.preventDefault();
   //check if they are empty or not
-  if (required(inputName) && required(email) && required(message)) {
+  if (
+    required(inputName) &&
+    required(email) &&
+    required(message) &&
+    validateEmail(email.value)
+  ) {
     //check if is correct email
+
+    alert("your email has been sent");
+    form.submit();
+  } else {
     if (validateEmail(email.value) == false) {
       email.classList.remove("correct-border");
       email.classList.add("error-border");
       warningText.classList.remove("hidden");
       warningIcon.classList.remove("hidden");
-    } else {
-      alert("your email has been sent");
-      form.submit();
     }
   }
 });
