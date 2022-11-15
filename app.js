@@ -24,10 +24,11 @@ function checkInput(text) {
     if (text.classList.contains("border-Grey")) {
       text.classList.remove("border-Grey");
       text.classList.add("border-Green");
+      warning.classList.remove("hidden");
     }
   } else {
     text.classList.add("error-border");
-    warning.classList.toggle("hidden");
+    warning.classList.remove("hidden");
     counterError++;
   }
 }

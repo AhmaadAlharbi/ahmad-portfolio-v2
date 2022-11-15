@@ -24,3 +24,8 @@
 .error-border{
   border-bottom: 2px solid rgb(255, 65, 36);
 }
+/* * {
+  outline: 1px solid red !important;
+  opacity: 1 !important;
+  visibility: visible !important
+} */

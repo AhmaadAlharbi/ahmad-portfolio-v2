@@ -649,28 +649,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 2.5rem;
 }
 
-.max-w-md {
-  max-width: 28rem;
-}
-
 .max-w-xl {
   max-width: 36rem;
 }
 
 .max-w-sm {
   max-width: 24rem;
-}
-
-.max-w-7xl {
-  max-width: 80rem;
-}
-
-.max-w-5xl {
-  max-width: 64rem;
-}
-
-.max-w-6xl {
-  max-width: 72rem;
 }
 
 .flex-1 {
@@ -719,10 +703,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-evenly {
-  justify-content: space-evenly;
 }
 
 .gap-10 {
@@ -868,11 +848,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
-}
-
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -926,11 +901,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
-.text-Green {
-  --tw-text-opacity: 1;
-  color: rgb(78 225 160 / var(--tw-text-opacity));
-}
-
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -965,6 +935,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .error-border{
   border-bottom: 2px solid rgb(255, 65, 36);
 }
+
+/* * {
+  outline: 1px solid red !important;
+  opacity: 1 !important;
+  visibility: visible !important
+} */
 
 .hover\:pb-4:hover {
   padding-bottom: 1rem;
@@ -1191,6 +1167,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:px-52 {
     padding-left: 13rem;
     padding-right: 13rem;
+  }
+
+  .lg\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .lg\:px-36 {
+    padding-left: 9rem;
+    padding-right: 9rem;
   }
 
   .lg\:text-left {
