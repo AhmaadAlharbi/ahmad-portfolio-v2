@@ -974,7 +974,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 /* * {
   outline: 1px solid red !important;
   opacity: 1 !important;
-  visibility: visible !important
+  visibility: visible !important;
 } */
 
 .hover\:pb-4:hover {
@@ -1069,6 +1069,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1086,11 +1090,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     --tw-space-x-reverse: 0;
     margin-right: calc(3rem * var(--tw-space-x-reverse));
     margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .md\:px-40 {
-    padding-left: 10rem;
-    padding-right: 10rem;
   }
 
   .md\:px-20 {
@@ -1197,10 +1196,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:gap-40 {
     gap: 10rem;
-  }
-
-  .lg\:place-self-end {
-    place-self: end;
   }
 
   .lg\:px-52 {
