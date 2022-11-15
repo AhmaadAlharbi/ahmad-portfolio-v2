@@ -565,6 +565,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2.5rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
@@ -607,10 +611,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mr-2 {
   margin-right: 0.5rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
 }
 
 .block {
@@ -945,12 +945,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin:0 auto;
 }
 
-/* * {
-  outline: 1px solid red !important;
-  opacity: 1 !important;
-  visibility: visible !important
-} */
-
 .hover\:pb-4:hover {
   padding-bottom: 1rem;
 }
@@ -1049,10 +1043,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:justify-between {
     justify-content: space-between;
-  }
-
-  .md\:gap-40 {
-    gap: 10rem;
   }
 
   .md\:gap-x-32 {
@@ -1174,11 +1164,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-right: 13rem;
   }
 
-  .lg\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
   .lg\:text-left {
     text-align: left;
   }
@@ -1200,3 +1185,4 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 1;
   }
 }
+
