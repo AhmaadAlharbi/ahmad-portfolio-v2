@@ -743,6 +743,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.place-self-start {
+  place-self: start;
+}
+
 .place-self-end {
   place-self: end;
 }
@@ -943,6 +947,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 #icons svg{
   margin:0 auto;
+}
+
+.border-red-500{
+  border-bottom: 2px solid rgb(255, 65, 36);
 }
 
 .hover\:pb-4:hover {
@@ -1185,4 +1193,3 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 1;
   }
 }
-

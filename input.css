@@ -21,3 +21,6 @@
  margin:0 auto;
 }
 
+.border-red-500{
+  border-bottom: 2px solid rgb(255, 65, 36);
+}

@@ -5,7 +5,8 @@ const sendBtn = document.getElementById("send");
 const warningText = document.getElementById("warningText");
 const warningIcon = document.getElementById("warningIcon");
 const form = document.querySelector("form");
-
+const warning = document.querySelector(".warning");
+console.log(warning);
 let counterError = 0;
 function validateEmail(email) {
   var re = /\S+@\S+\.\S+/;
@@ -17,6 +18,7 @@ function checkInput(text) {
   if (text.value != "") {
     text.classList.remove("border-red-500");
     text.classList.add("border-Green");
+    warning.classList.add("hidden");
   }
   if (text.value.length > 0) {
     if (text.classList.contains("border-Grey")) {
@@ -25,6 +27,7 @@ function checkInput(text) {
     }
   } else {
     text.classList.add("border-red-500");
+    warning.classList.toggle("hidden");
     counterError++;
   }
 }

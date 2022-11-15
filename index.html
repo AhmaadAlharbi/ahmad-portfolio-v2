@@ -418,11 +418,13 @@
               method="post"
             >
               <label class="text-Grey">NAME</label>
+
               <input
                 id="name"
                 type="text"
                 class="w-full bg-transparent border-b-2 border-Grey focus:outline-0 mb-10"
               />
+
               <div class="relative flex flex-col">
                 <label class="text-Grey">EMAIL</label>
                 <input
@@ -476,6 +478,9 @@
                 id="message"
                 class="w-full bg-transparent border-b-2 border-Grey focus:ring-0 focus:border-Grey focus:outline-0"
               ></textarea>
+              <span class="text-red-500 warning place-self-center hidden mt-5"
+                >Please enter your name , email and your Message</span
+              >
               <button
                 id="send"
                 type="submit"
