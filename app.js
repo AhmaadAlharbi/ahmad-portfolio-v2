@@ -15,6 +15,9 @@ function validateEmail(email) {
 //check if forms inputs empty or not
 
 function required(inputtx) {
+  inputtx.classList.remove("error-border");
+  inputtx.classList.remove("correct-border");
+
   if (inputtx.value.length == 0) {
     inputtx.classList.add("error-border");
     warning.classList.remove("hidden");
@@ -29,6 +32,9 @@ function required(inputtx) {
 //submit the form
 sendBtn.addEventListener("click", (e) => {
   e.preventDefault();
+  warningText.classList.add("hidden");
+  warningIcon.classList.add("hidden");
+
   //check if they are empty or not
   if (
     required(inputName) &&
