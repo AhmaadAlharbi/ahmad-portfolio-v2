@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-#icons svg:hover path  {
+#icons svg:hover path {
   transition: fill;
   transition-delay: 0.5s;
   fill: #4ee1a0;
@@ -17,12 +17,15 @@
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   
 } */
-#icons svg{
- margin:0 auto;
+#icons svg {
+  margin: 0 auto;
 }
 
-.error-border{
-  border-bottom: 2px solid rgb(255, 65, 36);
+.error-border {
+  border: 2px solid rgb(255, 65, 36);
+}
+.correct-border {
+  border: 2px solid #4ee1a0;
 }
 /* * {
   outline: 1px solid red !important;

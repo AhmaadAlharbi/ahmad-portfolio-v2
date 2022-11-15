@@ -744,6 +744,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   place-self: center;
 }
 
+.self-center {
+  align-self: center;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -788,6 +796,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: transparent;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -818,8 +830,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 5rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
 }
 
 .text-left {
@@ -917,7 +938,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 200ms;
 }
 
-#icons svg:hover path  {
+#icons svg:hover path {
   transition: fill;
   transition-delay: 0.5s;
   fill: #4ee1a0;
@@ -934,12 +955,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   
 } */
 
-#icons svg{
-  margin:0 auto;
+#icons svg {
+  margin: 0 auto;
 }
 
-.error-border{
-  border-bottom: 2px solid rgb(255, 65, 36);
+.error-border {
+  border: 2px solid rgb(255, 65, 36);
+}
+
+.correct-border {
+  border: 2px solid #4ee1a0;
 }
 
 /* * {
