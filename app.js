@@ -1,11 +1,12 @@
 const inputName = document.getElementById("name");
 const email = document.getElementById("email");
-const message = document.getElementById("message");
+const message = document.querySelector("#message");
 const sendBtn = document.getElementById("send");
 const warningText = document.getElementById("warningText");
 const warningIcon = document.getElementById("warningIcon");
 const form = document.querySelector("form");
 const warning = document.querySelector(".warning");
+console.log(message);
 let counterError = 0;
 
 function validateEmail(email) {
@@ -32,10 +33,15 @@ function required(inputtx) {
 //submit the form
 sendBtn.addEventListener("click", (e) => {
   e.preventDefault();
+  counterError = 0;
   warningText.classList.add("hidden");
   warningIcon.classList.add("hidden");
+  if (!required(message)) {
+    counterError++;
+    message.classList.add("error-border");
+  }
 
-  //check if they are empty or not
+  // //check if they are empty or not
   if (
     required(inputName) &&
     required(email) &&
@@ -43,9 +49,10 @@ sendBtn.addEventListener("click", (e) => {
     validateEmail(email.value)
   ) {
     //check if is correct email
-
-    alert("your email has been sent");
-    form.submit();
+    if (counterError === 0) {
+      alert("your email has been sent");
+      form.submit();
+    }
   } else {
     if (validateEmail(email.value) == false) {
       email.classList.remove("correct-border");
