@@ -613,10 +613,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.5rem;
 }
 
-.mt-16 {
-  margin-top: 4rem;
-}
-
 .block {
   display: block;
 }
@@ -745,10 +741,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-space-x-reverse: 0;
   margin-right: calc(3rem * var(--tw-space-x-reverse));
   margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.place-self-start {
-  place-self: start;
 }
 
 .place-self-end {
@@ -953,7 +945,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin:0 auto;
 }
 
-.border-red-500{
+.error-border{
   border-bottom: 2px solid rgb(255, 65, 36);
 }
 

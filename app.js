@@ -16,7 +16,7 @@ function validateEmail(email) {
 //check input if it is empty or not
 function checkInput(text) {
   if (text.value != "") {
-    text.classList.remove("border-red-500");
+    text.classList.remove("error-border");
     text.classList.add("border-Green");
     warning.classList.add("hidden");
   }
@@ -26,7 +26,7 @@ function checkInput(text) {
       text.classList.add("border-Green");
     }
   } else {
-    text.classList.add("border-red-500");
+    text.classList.add("error-border");
     warning.classList.toggle("hidden");
     counterError++;
   }
@@ -37,10 +37,12 @@ sendBtn.addEventListener("click", (e) => {
   checkInput(inputName);
   checkInput(email);
   if (validateEmail(email.value) == false) {
-    email.classList.add("border-red-500");
+    email.classList.add("error-border");
     counterError++;
-    warningText.classList.remove("hidden");
-    warningIcon.classList.remove("hidden");
+    if (email.value != "") {
+      warningText.classList.remove("hidden");
+      warningIcon.classList.remove("hidden");
+    }
   } else {
     email.classList.add("border-Green");
     counterError = 0;
