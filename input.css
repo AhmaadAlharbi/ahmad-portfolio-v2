@@ -2,13 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-#icons svg:hover path {
+#icons svg:hover path  {
   transition: fill;
   transition-delay: 0.5s;
-
   fill: #4ee1a0;
   -webkit-transition: fill;
   -moz-transition: fill;
   -ms-transition: fill;
   -o-transition: fill;
+}
+/* #grid{
+   
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  
+} */
+#icons svg{
+ margin:0 auto;
+}
+* {
+  outline: 1px solid red !important;
+  opacity: 1 !important;
+  visibility: visible !important
 }
